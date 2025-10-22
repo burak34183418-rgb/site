@@ -264,7 +264,7 @@ const Contact = () => {
                 <div className="space-y-2 text-gray-600">
                   <div className="flex justify-between">
                     <span>{language === 'tr' ? 'Pazartesi - Cuma' : language === 'en' ? 'Monday - Friday' : language === 'ar' ? 'الإثنين - الجمعة' : 'Понедельник - Пятница'}</span>
-                    <span className="font-semibold">09:00 - 18:00</span>
+                    <span className="font-semibold">09:00 - 18:30</span>
                   </div>
                   <div className="flex justify-between">
                     <span>{language === 'tr' ? 'Cumartesi' : language === 'en' ? 'Saturday' : language === 'ar' ? 'السبت' : 'Суббота'}</span>
