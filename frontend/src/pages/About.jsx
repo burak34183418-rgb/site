@@ -59,13 +59,13 @@ const About = () => {
             </h2>
             <div className="space-y-4 text-gray-600 leading-relaxed">
               <p>
-                {language === 'tr'
-                  ? 'GOLD Vakum Sistemleri, endüstriyel ekipman sektöründe 20 yılı aşkın bir süredir kaliteli hizmet vermektedir. Buhar jeneratörleri, vakum sistemleri ve endüstriyel presler konusunda uzmanlaşmış firmamız, müşteri memnuniyetini her zaman ön planda tutmuştur.'
+                <strong className="text-blue-600">{companyInfo.about[language].experience}</strong> - {language === 'tr'
+                  ? 'GOLD Vakum Sistemleri, endüstriyel ekipman sektöründe 36 yıllık tecrübesiyle sektörün lider firmalarından biridir. Buhar jeneratörleri, vakum sistemleri ve endüstriyel presler konusunda uzmanlaşmış firmamız, müşteri memnuniyetini her zaman ön planda tutmuştur.'
                   : language === 'en'
-                  ? 'GOLD Vacuum Systems has been providing quality service in the industrial equipment sector for over 20 years. Our company, specialized in steam generators, vacuum systems and industrial presses, has always prioritized customer satisfaction.'
+                  ? 'GOLD Vacuum Systems is one of the leading companies in the industrial equipment sector with 36 years of experience. Our company, specialized in steam generators, vacuum systems and industrial presses, has always prioritized customer satisfaction.'
                   : language === 'ar'
-                  ? 'تقدم GOLD Vacuum Systems خدمة عالية الجودة في قطاع المعدات الصناعية لأكثر من 20 عامًا. تختص شركتنا في مولدات البخار وأنظمة الفراغ والمكابس الصناعية، وقد أعطت رضا العملاء الأولوية دائمًا.'
-                  : 'GOLD Vacuum Systems оказывает качественные услуги в секторе промышленного оборудования уже более 20 лет. Наша компания, специализирующаяся на парогенераторах, вакуумных системах и промышленных прессах, всегда ставила удовлетворенность клиентов на первое место.'}
+                  ? 'تعد GOLD Vacuum Systems واحدة من الشركات الرائدة في قطاع المعدات الصناعية مع 36 عامًا من الخبرة. تخصصت شركتنا في مولدات البخار وأنظمة الفراغ والمكابس الصناعية، وقد أعطت دائمًا الأولوية لرضا العملاء.'
+                  : 'GOLD Vacuum Systems является одной из ведущих компаний в секторе промышленного оборудования с 36-летним опытом. Наша компания, специализирующаяся на парогенераторах, вакуумных системах и промышленных прессах, всегда ставила удовлетворенность клиентов на первое место.'}
               </p>
               <p>
                 {language === 'tr'
