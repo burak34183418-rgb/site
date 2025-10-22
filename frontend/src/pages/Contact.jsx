@@ -3,6 +3,7 @@ import { useSearchParams } from 'react-router-dom';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { translations, products } from '../mockData';
+import { companyInfo } from '../data/companyInfo';
 import { Button } from '../components/ui/button';
 import { Input } from '../components/ui/input';
 import { Textarea } from '../components/ui/textarea';
