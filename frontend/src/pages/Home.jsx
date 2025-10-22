@@ -98,38 +98,105 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Categories Section */}
+      {/* Featured Products Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 space-y-4">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">{t.categories.title}</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">{t.categories.subtitle}</p>
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">
+              {language === 'tr' ? 'Popüler Cila Makinaları' : language === 'en' ? 'Popular Polishing Machines' : language === 'ar' ? 'آلات التلميع الشعبية' : 'Популярные полировальные машины'}
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              {language === 'tr' ? 'En çok tercih edilen profesyonel cila makinalarımız' : language === 'en' ? 'Our most preferred professional polishing machines' : language === 'ar' ? 'أكثر آلات التلميع الاحترافية المفضلة لدينا' : 'Наши самые популярные профессиональные полировальные машины'}
+            </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
-            {categories.map((category) => (
-              <Link key={category.id} to={`/products?category=${category.slug}`}>
-                <Card className="group cursor-pointer overflow-hidden border-2 hover:border-blue-600 transition-all duration-300 hover:shadow-xl">
-                  <div className="relative aspect-[4/3] overflow-hidden">
-                    <img
-                      src={category.image}
-                      alt={category.name[language]}
-                      className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-                    <div className="absolute bottom-4 left-4 right-4">
-                      <h3 className="text-xl font-bold text-white mb-1">{category.name[language]}</h3>
-                      <p className="text-sm text-gray-200">{category.description[language]}</p>
-                    </div>
+            {/* X7 Premium */}
+            <Link to="/product/prod-x7-premium">
+              <Card className="group cursor-pointer overflow-hidden border-2 hover:border-blue-600 transition-all duration-300 hover:shadow-xl">
+                <div className="relative aspect-[4/3] overflow-hidden bg-white p-4">
+                  <img
+                    src="https://customer-assets.emergentagent.com/job_beymen-site-clone/artifacts/otbo3pa0_BT8A8297.jpg"
+                    alt="X7 Premium Cila Makinası"
+                    className="w-full h-full object-contain transform group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                    {language === 'tr' ? 'PREMIUM' : 'PREMIUM'}
                   </div>
-                  <CardContent className="p-6">
-                    <Button variant="ghost" className="w-full group-hover:bg-blue-50 group-hover:text-blue-600 transition-colors">
-                      {t.products.viewDetails}
-                      <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                    </Button>
-                  </CardContent>
-                </Card>
-              </Link>
-            ))}
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
+                    {language === 'tr' ? 'X7 Premium Cila Makinası' : language === 'en' ? 'X7 Premium Polishing Machine' : language === 'ar' ? 'آلة تلميع X7 بريميوم' : 'Полировальная машина X7 Премиум'}
+                  </h3>
+                  <p className="text-sm text-gray-600 mb-4">2.8 KW • 220V/380V</p>
+                  <Button variant="ghost" className="w-full group-hover:bg-blue-50 group-hover:text-blue-600 transition-colors">
+                    {t.products.viewDetails}
+                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </Button>
+                </CardContent>
+              </Card>
+            </Link>
+
+            {/* King Cila */}
+            <Link to="/product/prod-king-makina">
+              <Card className="group cursor-pointer overflow-hidden border-2 hover:border-blue-600 transition-all duration-300 hover:shadow-xl">
+                <div className="relative aspect-[4/3] overflow-hidden bg-white p-4">
+                  <img
+                    src="https://customer-assets.emergentagent.com/job_beymen-site-clone/artifacts/0ownvyev_BT8A8267.png"
+                    alt="King Cila Makinası"
+                    className="w-full h-full object-contain transform group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute top-4 right-4 bg-yellow-500 text-white px-3 py-1 rounded-full text-xs font-bold">
+                    {language === 'tr' ? 'KING' : 'KING'}
+                  </div>
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
+                    {language === 'tr' ? 'King Cila Makinası' : language === 'en' ? 'King Polishing Machine' : language === 'ar' ? 'آلة تلميع كينج' : 'Полировальная машина Кинг'}
+                  </h3>
+                  <p className="text-sm text-gray-600 mb-4">3.0 KW • 380V</p>
+                  <Button variant="ghost" className="w-full group-hover:bg-blue-50 group-hover:text-blue-600 transition-colors">
+                    {t.products.viewDetails}
+                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </Button>
+                </CardContent>
+              </Card>
+            </Link>
+
+            {/* Mega Cila */}
+            <Link to="/product/prod-mega-cila-2">
+              <Card className="group cursor-pointer overflow-hidden border-2 hover:border-blue-600 transition-all duration-300 hover:shadow-xl">
+                <div className="relative aspect-[4/3] overflow-hidden bg-white p-4">
+                  <img
+                    src="https://customer-assets.emergentagent.com/job_beymen-site-clone/artifacts/fzhurecv_BT8A8345.jpg"
+                    alt="Mega Cila Makinası"
+                    className="w-full h-full object-contain transform group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute top-4 right-4 bg-green-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                    {language === 'tr' ? 'MEGA' : 'MEGA'}
+                  </div>
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
+                    {language === 'tr' ? 'Mega Cila Makinası' : language === 'en' ? 'Mega Polishing Machine' : language === 'ar' ? 'آلة تلميع ميجا' : 'Мега полировальная машина'}
+                  </h3>
+                  <p className="text-sm text-gray-600 mb-4">4.0 KW • 380V</p>
+                  <Button variant="ghost" className="w-full group-hover:bg-blue-50 group-hover:text-blue-600 transition-colors">
+                    {t.products.viewDetails}
+                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </Button>
+                </CardContent>
+              </Card>
+            </Link>
+          </div>
+          
+          {/* View All Products Button */}
+          <div className="text-center mt-12">
+            <Link to="/products">
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+                {language === 'tr' ? 'Tüm Ürünleri Görüntüle' : language === 'en' ? 'View All Products' : language === 'ar' ? 'عرض جميع المنتجات' : 'Посмотреть все продукты'}
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
