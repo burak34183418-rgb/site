@@ -248,7 +248,7 @@ const Contact = () => {
                       <h4 className="font-semibold text-gray-900 mb-1">
                         {language === 'tr' ? 'E-posta' : language === 'en' ? 'Email' : language === 'ar' ? 'البريد الإلكتروني' : 'Эл. почта'}
                       </h4>
-                      <p className="text-gray-600 text-sm">info@goldvakum.com</p>
+                      <p className="text-gray-600 text-sm">{companyInfo.email}</p>
                     </div>
                   </div>
                 </div>
