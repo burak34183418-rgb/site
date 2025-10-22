@@ -735,6 +735,80 @@ async def seed_products():
             "is_active": True,
             "created_at": datetime.utcnow(),
             "updated_at": datetime.utcnow()
+        },
+        {
+            "id": "prod-super-tezgah",
+            "category_id": "cat-vacuum-systems",
+            "name": {
+                "tr": "Süper Tezgah - Profesyonel İstasyon",
+                "en": "Super Workbench - Professional Station",
+                "ar": "منضدة سوبر - محطة احترافية",
+                "ru": "Супер верстак - Профессиональная станция"
+            },
+            "description": {
+                "tr": "En üst segment süper tezgah. Çoklu işlem istasyonu, vakum sistemi ve buhar jeneratörü entegrasyonu. Tam donanımlı profesyonel çalışma istasyonu.",
+                "en": "Top segment super workbench. Multi-process station with vacuum system and steam generator integration. Fully equipped professional workstation.",
+                "ar": "منضدة سوبر الشريحة العليا. محطة متعددة العمليات مع نظام فراغ وتكامل مولد البخار. محطة عمل احترافية مجهزة بالكامل.",
+                "ru": "Супер верстак топ-сегмента. Многопроцессная станция с интеграцией вакуумной системы и парогенератора. Полностью оборудованная профессиональная рабочая станция."
+            },
+            "specs": {
+                "power": "5.5 KW",
+                "voltage": "380V",
+                "dimensions": "180x100x110 cm",
+                "weight": "185 kg",
+                "vacuum_power": "Entegre güçlü vakum",
+                "steam": "Buhar jeneratörü bağlantısı"
+            },
+            "features": {
+                "tr": [
+                    "Çoklu işlem istasyonu",
+                    "Entegre vakum sistemi", 
+                    "Buhar jeneratörü desteği",
+                    "Geniş çalışma alanı",
+                    "Çekmeceli saklama",
+                    "Pedallı kontrol",
+                    "Profesyonel kullanım",
+                    "CE sertifikalı"
+                ],
+                "en": [
+                    "Multi-process station",
+                    "Integrated vacuum system",
+                    "Steam generator support",
+                    "Wide working area",
+                    "Drawer storage",
+                    "Pedal control",
+                    "Professional use",
+                    "CE certified"
+                ],
+                "ar": [
+                    "محطة متعددة العمليات",
+                    "نظام فراغ متكامل",
+                    "دعم مولد البخار",
+                    "منطقة عمل واسعة",
+                    "تخزين أدراج",
+                    "تحكم بالدواسة",
+                    "استخدام احترافي",
+                    "معتمد من CE"
+                ],
+                "ru": [
+                    "Многопроцессная станция",
+                    "Встроенная вакуумная система",
+                    "Поддержка парогенератора",
+                    "Широкая рабочая зона",
+                    "Ящики для хранения",
+                    "Педальное управление",
+                    "Профессиональное использование",
+                    "Сертифицирован CE"
+                ]
+            },
+            "images": [
+                "https://customer-assets.emergentagent.com/job_beymen-site-clone/artifacts/w5j4k10a_BT8A8462.png",
+                "https://customer-assets.emergentagent.com/job_beymen-site-clone/artifacts/cql2u3c8_BT8A8464.jpg"
+            ],
+            "price": "Fiyat için iletişime geçin",
+            "is_active": True,
+            "created_at": datetime.utcnow(),
+            "updated_at": datetime.utcnow()
         }
     ]
     
