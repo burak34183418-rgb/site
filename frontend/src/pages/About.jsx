@@ -2,6 +2,7 @@ import React from 'react';
 import { Award, Users, Globe2, TrendingUp } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../mockData';
+import { companyInfo } from '../data/companyInfo';
 import { Card, CardContent } from '../components/ui/card';
 
 const About = () => {
