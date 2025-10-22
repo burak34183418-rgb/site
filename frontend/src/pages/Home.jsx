@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Award, Headphones, Shield, Globe2 } from 'lucide-react';
+import { ArrowRight, Award, Headphones, Shield, Globe2, TrendingUp } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../mockData';
 import { categoriesAPI } from '../services/api';
