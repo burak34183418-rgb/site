@@ -27,6 +27,7 @@ async def login(credentials: AdminLogin):
     return Token(access_token=access_token, token_type="bearer")
 
 @router.get("/me")
+@router.get("/me/")
 async def get_current_admin_info(admin: dict = Depends(get_current_admin)):
     """Get current admin information"""
     return {
