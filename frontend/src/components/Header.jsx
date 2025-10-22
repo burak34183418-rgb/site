@@ -48,7 +48,8 @@ const Header = () => {
               <div className="text-base font-bold text-gray-800 leading-tight">
                 GOLD VAKUM SİSTEMLERİ
               </div>
-              <div className="text-sm text-gray-600">MAKİNA SANAYİ TİCARET LTD. ŞTİ.</div>
+              <div className="text-xs text-yellow-600 font-semibold italic">For the optimum gold recovery</div>
+              <div className="text-xs text-gray-600">MAKİNA SANAYİ TİCARET LTD. ŞTİ.</div>
             </div>
           </Link>
 
