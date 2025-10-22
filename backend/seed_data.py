@@ -570,6 +570,171 @@ async def seed_products():
             "is_active": True,
             "created_at": datetime.utcnow(),
             "updated_at": datetime.utcnow()
+        },
+        {
+            "id": "prod-lap-cila-kombi",
+            "category_id": "cat-vacuum-systems",
+            "name": {
+                "tr": "Lap + Cila Kombinasyonu",
+                "en": "Lap + Polishing Combination",
+                "ar": "مزيج لف + تلميع",
+                "ru": "Комбинация шлифовки + полировки"
+            },
+            "description": {
+                "tr": "Lap ve cila işlemlerini bir arada yapabilen çok fonksiyonlu makina. Verimli çalışma için tasarlandı.",
+                "en": "Multi-functional machine that can perform both lap and polishing operations. Designed for efficient work.",
+                "ar": "آلة متعددة الوظائف يمكنها أداء عمليات اللف والتلميع. مصممة للعمل الفعال.",
+                "ru": "Многофункциональная машина для шлифовки и полировки. Разработана для эффективной работы."
+            },
+            "specs": {
+                "power": "3.2 KW",
+                "voltage": "380V",
+                "dimensions": "130x75x95 cm",
+                "weight": "110 kg"
+            },
+            "features": {
+                "tr": ["2 in 1 sistem", "Çok fonksiyonlu", "Yüksek verim", "Profesyonel"],
+                "en": ["2 in 1 system", "Multi-functional", "High efficiency", "Professional"],
+                "ar": ["نظام 2 في 1", "متعدد الوظائف", "كفاءة عالية", "احترافي"],
+                "ru": ["Система 2 в 1", "Многофункциональный", "Высокая эффективность", "Профессиональный"]
+            },
+            "images": ["https://customer-assets.emergentagent.com/job_beymen-site-clone/artifacts/d21fft0m_BT8A8416.png"],
+            "price": "Fiyat için iletişime geçin",
+            "is_active": True,
+            "created_at": datetime.utcnow(),
+            "updated_at": datetime.utcnow()
+        },
+        {
+            "id": "prod-super-vakum-cila",
+            "category_id": "cat-vacuum-systems",
+            "name": {
+                "tr": "Süper Vakum Cila Makinası",
+                "en": "Super Vacuum Polishing Machine",
+                "ar": "آلة تلميع فراغ فائقة",
+                "ru": "Супер вакуумная полировальная машина"
+            },
+            "description": {
+                "tr": "Güçlü vakum sistemli süper cila makinası. Toz ve kir emmede mükemmel performans.",
+                "en": "Super polishing machine with powerful vacuum system. Excellent performance in dust and dirt extraction.",
+                "ar": "آلة تلميع فائقة مع نظام فراغ قوي. أداء ممتاز في استخراج الغبار والأوساخ.",
+                "ru": "Супер полировальная машина с мощной вакуумной системой. Отличная производительность по удалению пыли и грязи."
+            },
+            "specs": {
+                "power": "2.0 KW",
+                "voltage": "220V",
+                "dimensions": "70x55x65 cm",
+                "weight": "58 kg"
+            },
+            "features": {
+                "tr": ["Süper vakum", "Güçlü emme", "Sessiz çalışma", "Kolay temizlik"],
+                "en": ["Super vacuum", "Powerful suction", "Quiet operation", "Easy cleaning"],
+                "ar": ["فراغ فائق", "شفط قوي", "تشغيل هادئ", "تنظيف سهل"],
+                "ru": ["Супер вакуум", "Мощное всасывание", "Тихая работа", "Легкая очистка"]
+            },
+            "images": ["https://customer-assets.emergentagent.com/job_beymen-site-clone/artifacts/6bdfl6h6_BT8A8408.jpg"],
+            "price": "Fiyat için iletişime geçin",
+            "is_active": True,
+            "created_at": datetime.utcnow(),
+            "updated_at": datetime.utcnow()
+        },
+        {
+            "id": "prod-yeni-tip-tezgah",
+            "category_id": "cat-vacuum-systems",
+            "name": {
+                "tr": "Yeni Tip Çalışma Tezgahı",
+                "en": "New Type Workbench",
+                "ar": "منضدة عمل نوع جديد",
+                "ru": "Верстак нового типа"
+            },
+            "description": {
+                "tr": "Son teknoloji yeni tip çalışma tezgahı. Ergonomik tasarım ve yüksek fonksiyonellik.",
+                "en": "State-of-the-art new type workbench. Ergonomic design and high functionality.",
+                "ar": "منضدة عمل حديثة من نوع جديد. تصميم مريح ووظائف عالية.",
+                "ru": "Современный верстак нового типа. Эргономичный дизайн и высокая функциональность."
+            },
+            "specs": {
+                "power": "2.2 KW",
+                "voltage": "220V / 380V",
+                "dimensions": "140x85x95 cm",
+                "weight": "125 kg"
+            },
+            "features": {
+                "tr": ["Yeni teknoloji", "Ergonomik", "Çok fonksiyonlu", "Modern tasarım"],
+                "en": ["New technology", "Ergonomic", "Multi-functional", "Modern design"],
+                "ar": ["تكنولوجيا جديدة", "مريح", "متعدد الوظائف", "تصميم حديث"],
+                "ru": ["Новая технология", "Эргономичный", "Многофункциональный", "Современный дизайн"]
+            },
+            "images": ["https://customer-assets.emergentagent.com/job_beymen-site-clone/artifacts/90pp8ybf_BT8A8448.png"],
+            "price": "Fiyat için iletişime geçin",
+            "is_active": True,
+            "created_at": datetime.utcnow(),
+            "updated_at": datetime.utcnow()
+        },
+        {
+            "id": "prod-universal-tezgah",
+            "category_id": "cat-vacuum-systems",
+            "name": {
+                "tr": "Universal Çalışma Tezgahı",
+                "en": "Universal Workbench",
+                "ar": "منضدة عمل عالمية",
+                "ru": "Универсальный верстак"
+            },
+            "description": {
+                "tr": "Her türlü işlem için uygun universal tezgah. Modüler yapı ile özelleştirilebilir.",
+                "en": "Universal workbench suitable for all types of operations. Customizable with modular structure.",
+                "ar": "منضدة عمل عالمية مناسبة لجميع أنواع العمليات. قابلة للتخصيص بهيكل معياري.",
+                "ru": "Универсальный верстак для всех типов операций. Настраиваемый с модульной структурой."
+            },
+            "specs": {
+                "power": "2.8 KW",
+                "voltage": "380V",
+                "dimensions": "150x90x100 cm",
+                "weight": "135 kg"
+            },
+            "features": {
+                "tr": ["Universal kullanım", "Modüler yapı", "Geniş alan", "Profesyonel"],
+                "en": ["Universal use", "Modular structure", "Wide area", "Professional"],
+                "ar": ["استخدام عالمي", "هيكل معياري", "منطقة واسعة", "احترافي"],
+                "ru": ["Универсальное использование", "Модульная структура", "Широкая площадь", "Профессиональный"]
+            },
+            "images": ["https://customer-assets.emergentagent.com/job_beymen-site-clone/artifacts/mpwxntoq_BT8A8451.png"],
+            "price": "Fiyat için iletişime geçin",
+            "is_active": True,
+            "created_at": datetime.utcnow(),
+            "updated_at": datetime.utcnow()
+        },
+        {
+            "id": "prod-x5-mega",
+            "category_id": "cat-vacuum-systems",
+            "name": {
+                "tr": "X5 Mega Cila Makinası",
+                "en": "X5 Mega Polishing Machine",
+                "ar": "آلة تلميع X5 ميجا",
+                "ru": "Полировальная машина X5 Мега"
+            },
+            "description": {
+                "tr": "X5 serisi mega cila makinası. Yüksek kapasite ve üstün teknoloji bir arada.",
+                "en": "X5 series mega polishing machine. High capacity and superior technology combined.",
+                "ar": "آلة تلميع ميجا من سلسلة X5. سعة عالية وتكنولوجيا متفوقة معًا.",
+                "ru": "Мега полировальная машина серии X5. Высокая мощность и превосходная технология вместе."
+            },
+            "specs": {
+                "power": "3.8 KW",
+                "voltage": "380V",
+                "dimensions": "110x75x85 cm",
+                "weight": "92 kg"
+            },
+            "features": {
+                "tr": ["X5 serisi", "Mega kapasite", "İleri teknoloji", "Yüksek verim"],
+                "en": ["X5 series", "Mega capacity", "Advanced technology", "High efficiency"],
+                "ar": ["سلسلة X5", "سعة ميجا", "تكنولوجيا متقدمة", "كفاءة عالية"],
+                "ru": ["Серия X5", "Мега мощность", "Передовая технология", "Высокая эффективность"]
+            },
+            "images": ["https://customer-assets.emergentagent.com/job_beymen-site-clone/artifacts/7cmn9p5y_BT8A8360.jpg"],
+            "price": "Fiyat için iletişime geçin",
+            "is_active": True,
+            "created_at": datetime.utcnow(),
+            "updated_at": datetime.utcnow()
         }
     ]
     
