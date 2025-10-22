@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin, Smartphone, Globe } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../mockData';
+import { companyInfo } from '../data/companyInfo';
 
 const Footer = () => {
   const { language } = useLanguage();
