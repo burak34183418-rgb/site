@@ -55,15 +55,31 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-blue-400 flex-shrink-0 mt-0.5" />
-                <span className="text-sm text-gray-300">İstanbul, Türkiye</span>
+                <span className="text-sm text-gray-300">{companyInfo.address[language]}</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-blue-400 flex-shrink-0" />
-                <span className="text-sm text-gray-300">+90 (XXX) XXX XX XX</span>
+                <span className="text-sm text-gray-300">{companyInfo.phone}</span>
+              </li>
+              <li className="flex items-center space-x-3">
+                <Smartphone className="h-5 w-5 text-blue-400 flex-shrink-0" />
+                <span className="text-sm text-gray-300">{companyInfo.mobile}</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-blue-400 flex-shrink-0" />
-                <span className="text-sm text-gray-300">info@goldvakum.com</span>
+                <span className="text-sm text-gray-300">{companyInfo.email}</span>
+              </li>
+              <li className="flex items-start space-x-3">
+                <Globe className="h-5 w-5 text-blue-400 flex-shrink-0 mt-0.5" />
+                <div className="text-sm text-gray-300">
+                  {companyInfo.websites.map((site, idx) => (
+                    <div key={idx}>
+                      <a href={`https://${site}`} target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
+                        {site}
+                      </a>
+                    </div>
+                  ))}
+                </div>
               </li>
             </ul>
           </div>
