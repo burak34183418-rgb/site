@@ -71,7 +71,7 @@ const About = () => {
                 {language === 'tr'
                   ? 'Modern üretim tesisimiz ve uzman kadromuzla, dünya çapında 50\'den fazla ülkeye ihracat yapmaktayız. CE sertifikalı ürünlerimiz, uluslararası kalite standartlarına uygun olarak üretilmektedir.'
                   : language === 'en'
-                  ? 'With our modern production facility and expert staff, we produce solutions suitable for the needs of the industry. Our CE certified products are manufactured in accordance with international quality standards.'
+                  ? 'With our modern production facility and expert staff, we export to more than 50 countries worldwide. Our CE certified products are manufactured in accordance with international quality standards.'
                   : language === 'ar'
                   ? 'مع منشأة إنتاجنا الحديثة وموظفينا الخبراء، ننتج حلولًا تناسب احتياجات الصناعة. يتم تصنيع منتجاتنا الحاصلة على شهادة CE وفقًا لمعايير الجоدة الدولية.'
                   : 'Благодаря нашему современному производственному оборудованию и опытному персоналу, мы производим решения, соответствующие потребностям отрасли. Наша продукция, сертифицированная CE, изготавливается в соответствии с международными стандартами качества.'}
