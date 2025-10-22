@@ -7,6 +7,7 @@ from auth import authenticate_admin, create_access_token, ACCESS_TOKEN_EXPIRE_MI
 router = APIRouter(prefix="/auth", tags=["Authentication"])
 
 @router.post("/login", response_model=Token)
+@router.post("/login/", response_model=Token)
 async def login(credentials: AdminLogin):
     """Admin login endpoint"""
     admin = await authenticate_admin(credentials.username, credentials.password)
