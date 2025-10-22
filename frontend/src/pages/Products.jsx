@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { Filter } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
-import { translations, products, categories } from '../mockData';
+import { translations } from '../mockData';
+import { productsAPI, categoriesAPI } from '../services/api';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 
@@ -11,25 +12,42 @@ const Products = () => {
   const t = translations[language];
   const [searchParams] = useSearchParams();
   const [selectedCategory, setSelectedCategory] = useState('all');
-  const [filteredProducts, setFilteredProducts] = useState(products);
+  const [products, setProducts] = useState([]);
+  const [categories, setCategories] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  const fetchData = async () => {
+    try {
+      const [productsRes, categoriesRes] = await Promise.all([
+        productsAPI.getAll({ is_active: true }),
+        categoriesAPI.getAll(),
+      ]);
+      setProducts(productsRes.data);
+      setCategories(categoriesRes.data);
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   useEffect(() => {
     const categoryParam = searchParams.get('category');
-    if (categoryParam) {
+    if (categoryParam && categories.length > 0) {
       const category = categories.find(c => c.slug === categoryParam);
       if (category) {
-        setSelectedCategory(category.id.toString());
+        setSelectedCategory(category.id);
       }
     }
-  }, [searchParams]);
+  }, [searchParams, categories]);
 
-  useEffect(() => {
-    if (selectedCategory === 'all') {
-      setFilteredProducts(products);
-    } else {
-      setFilteredProducts(products.filter(p => p.categoryId.toString() === selectedCategory));
-    }
-  }, [selectedCategory]);
+  const filteredProducts = selectedCategory === 'all'
+    ? products
+    : products.filter(p => p.category_id === selectedCategory);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-gray-50">
