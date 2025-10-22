@@ -219,7 +219,7 @@ const Contact = () => {
                       <h4 className="font-semibold text-gray-900 mb-1">
                         {language === 'tr' ? 'Adres' : language === 'en' ? 'Address' : language === 'ar' ? 'العنوان' : 'Адрес'}
                       </h4>
-                      <p className="text-gray-600 text-sm">İstanbul, Türkiye</p>
+                      <p className="text-gray-600 text-sm">{companyInfo.address[language]}</p>
                     </div>
                   </div>
 
