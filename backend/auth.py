@@ -10,7 +10,11 @@ from database import admin_users_collection
 from models import AdminUser, AdminLogin, Token
 
 # Security configurations
-SECRET_KEY = os.getenv("JWT_SECRET_KEY", "your-secret-key-change-in-production-very-important-secret")
+SECRET_KEY = os.getenv("JWT_SECRET_KEY")
+if not SECRET_KEY:
+    import secrets
+    SECRET_KEY = secrets.token_urlsafe(32)
+    print("⚠️  Warning: JWT_SECRET_KEY not found in environment. Using generated key for this session.")
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 60 * 24  # 24 hours
 
