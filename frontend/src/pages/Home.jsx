@@ -89,7 +89,7 @@ const Home = () => {
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-2xl opacity-20 blur-2xl" />
               <img
-                src={categories[0].image}
+                src={categories[0]?.image || 'https://customer-assets.emergentagent.com/job_00fb527f-13c0-4a88-8f54-3e96e9176e0d/artifacts/c3vefy9q_BT8A7957.jpg'}
                 alt="GOLD Machinery"
                 className="relative rounded-2xl shadow-2xl w-full h-auto transform hover:scale-105 transition-transform duration-500"
               />
