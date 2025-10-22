@@ -37,22 +37,42 @@ const Contact = () => {
     }
   }, [searchParams]);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Mock submission
-    console.log('Form submitted:', formData);
-    toast({
-      title: t.contact.success,
-      description: language === 'tr' ? 'En kısa sürede sizinle iletişime geçeceğiz.' : language === 'en' ? 'We will contact you shortly.' : language === 'ar' ? 'سنتواصل معك قريبًا.' : 'Мы свяжемся с вами в ближайшее время.',
-    });
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      company: '',
-      product: '',
-      message: '',
-    });
+    
+    try {
+      // Import contactAPI
+      const { contactAPI } = await import('../services/api');
+      
+      await contactAPI.submit({
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        company: formData.company || null,
+        product_id: formData.product || null,
+        message: formData.message,
+      });
+      
+      toast({
+        title: t.contact.success,
+        description: language === 'tr' ? 'En kısa sürede sizinle iletişime geçeceğiz.' : language === 'en' ? 'We will contact you shortly.' : language === 'ar' ? 'سنتواصل معك قريبًا.' : 'Мы свяжемся с вами в ближайшее время.',
+      });
+      
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        company: '',
+        product: '',
+        message: '',
+      });
+    } catch (error) {
+      toast({
+        title: language === 'tr' ? 'Hata' : language === 'en' ? 'Error' : language === 'ar' ? 'خطأ' : 'Ошибка',
+        description: language === 'tr' ? 'Mesaj gönderilemedi' : language === 'en' ? 'Message could not be sent' : language === 'ar' ? 'تعذر إرسال الرسالة' : 'Сообщение не отправлено',
+        variant: 'destructive',
+      });
+    }
   };
 
   const handleChange = (e) => {
