@@ -42,13 +42,13 @@ const Header = () => {
             <img
               src="https://customer-assets.emergentagent.com/job_beymen-site-clone/artifacts/3dm45or1_WhatsApp%20Image%202025-10-20%20at%2003.44.32.jpeg"
               alt="GOLD Logo"
-              className="h-16 w-auto object-contain"
+              className="h-24 w-auto object-contain"
             />
             <div className="hidden lg:block">
-              <div className="text-sm font-bold text-gray-800 leading-tight">
+              <div className="text-base font-bold text-gray-800 leading-tight">
                 GOLD VAKUM SİSTEMLERİ
               </div>
-              <div className="text-xs text-gray-600">MAKİNA SANAYİ TİCARET LTD. ŞTİ.</div>
+              <div className="text-sm text-gray-600">MAKİNA SANAYİ TİCARET LTD. ŞTİ.</div>
             </div>
           </Link>
 
