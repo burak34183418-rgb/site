@@ -405,6 +405,171 @@ async def seed_products():
             "is_active": True,
             "created_at": datetime.utcnow(),
             "updated_at": datetime.utcnow()
+        },
+        {
+            "id": "prod-super-lap-2",
+            "category_id": "cat-vacuum-systems",
+            "name": {
+                "tr": "Süper Lap Makinası",
+                "en": "Super Lap Machine",
+                "ar": "آلة لف فائقة",
+                "ru": "Супер шлифовальная машина"
+            },
+            "description": {
+                "tr": "Yüksek performanslı süper lap makinası. İleri teknoloji ile üstün sonuçlar.",
+                "en": "High performance super lap machine. Superior results with advanced technology.",
+                "ar": "آلة لف فائقة عالية الأداء. نتائج متفوقة مع التكنولوجيا المتقدمة.",
+                "ru": "Высокопроизводительная супер шлифовальная машина. Превосходные результаты с передовыми технологиями."
+            },
+            "specs": {
+                "power": "2.5 KW",
+                "voltage": "380V",
+                "table_size": "70x50 cm",
+                "weight": "65 kg"
+            },
+            "features": {
+                "tr": ["Yüksek performans", "İleri teknoloji", "Hassas kontrol", "CE sertifikalı"],
+                "en": ["High performance", "Advanced technology", "Precise control", "CE certified"],
+                "ar": ["أداء عالي", "تكنولوجيا متقدمة", "تحكم دقيق", "معتمد من CE"],
+                "ru": ["Высокая производительность", "Передовая технология", "Точный контроль", "Сертифицирован CE"]
+            },
+            "images": ["https://customer-assets.emergentagent.com/job_beymen-site-clone/artifacts/ri3t6iz4_BT8A8238.jpg"],
+            "price": "Fiyat için iletişime geçin",
+            "is_active": True,
+            "created_at": datetime.utcnow(),
+            "updated_at": datetime.utcnow()
+        },
+        {
+            "id": "prod-king-makina",
+            "category_id": "cat-vacuum-systems",
+            "name": {
+                "tr": "King Cila Makinası",
+                "en": "King Polishing Machine",
+                "ar": "آلة تلميع كينج",
+                "ru": "Полировальная машина Кинг"
+            },
+            "description": {
+                "tr": "Premium sınıf King model cila makinası. Endüstriyel kullanım için en üst segment.",
+                "en": "Premium class King model polishing machine. Top segment for industrial use.",
+                "ar": "آلة تلميع طراز كينج من الفئة الممتازة. الشريحة العليا للاستخدام الصناعي.",
+                "ru": "Полировальная машина премиум-класса модели Кинг. Топ-сегмент для промышленного использования."
+            },
+            "specs": {
+                "power": "3.0 KW",
+                "voltage": "380V",
+                "dimensions": "80x60x75 cm",
+                "weight": "85 kg"
+            },
+            "features": {
+                "tr": ["Premium model", "Yüksek kapasite", "Profesyonel", "Dayanıklı yapı"],
+                "en": ["Premium model", "High capacity", "Professional", "Durable structure"],
+                "ar": ["طراز بريميوم", "سعة عالية", "احترافي", "هيكل متين"],
+                "ru": ["Премиум модель", "Высокая мощность", "Профессиональный", "Прочная конструкция"]
+            },
+            "images": ["https://customer-assets.emergentagent.com/job_beymen-site-clone/artifacts/0ownvyev_BT8A8267.png"],
+            "price": "Fiyat için iletişime geçin",
+            "is_active": True,
+            "created_at": datetime.utcnow(),
+            "updated_at": datetime.utcnow()
+        },
+        {
+            "id": "prod-x7-premium",
+            "category_id": "cat-vacuum-systems",
+            "name": {
+                "tr": "X7 Premium Cila Makinası",
+                "en": "X7 Premium Polishing Machine",
+                "ar": "آلة تلميع X7 بريميوم",
+                "ru": "Полировальная машина X7 Премиум"
+            },
+            "description": {
+                "tr": "X7 serisi premium cila makinası. En yeni teknoloji ve üstün performans bir arada.",
+                "en": "X7 series premium polishing machine. Latest technology and superior performance combined.",
+                "ar": "آلة تلميع بريميوم من سلسلة X7. أحدث التقنيات والأداء المتفوق معًا.",
+                "ru": "Премиум полировальная машина серии X7. Новейшие технологии и превосходная производительность вместе."
+            },
+            "specs": {
+                "power": "2.8 KW",
+                "voltage": "220V / 380V",
+                "dimensions": "75x55x70 cm",
+                "weight": "72 kg"
+            },
+            "features": {
+                "tr": ["X7 teknoloji", "Premium özellikler", "Çift voltaj", "Yüksek verim"],
+                "en": ["X7 technology", "Premium features", "Dual voltage", "High efficiency"],
+                "ar": ["تقنية X7", "ميزات بريميوم", "جهد مزدوج", "كفاءة عالية"],
+                "ru": ["Технология X7", "Премиум функции", "Двойное напряжение", "Высокая эффективность"]
+            },
+            "images": ["https://customer-assets.emergentagent.com/job_beymen-site-clone/artifacts/otbo3pa0_BT8A8297.jpg"],
+            "price": "Fiyat için iletişime geçin",
+            "is_active": True,
+            "created_at": datetime.utcnow(),
+            "updated_at": datetime.utcnow()
+        },
+        {
+            "id": "prod-iki-kisilik-lap",
+            "category_id": "cat-vacuum-systems",
+            "name": {
+                "tr": "İki Kişilik Lap Makinası",
+                "en": "Two-Person Lap Machine",
+                "ar": "آلة لف لشخصين",
+                "ru": "Шлифовальная машина на два человека"
+            },
+            "description": {
+                "tr": "İki operatör için tasarlanmış profesyonel lap makinası. Çift taraflı çalışma imkanı.",
+                "en": "Professional lap machine designed for two operators. Double-sided operation capability.",
+                "ar": "آلة لف احترافية مصممة لمشغلين اثنين. إمكانية العمل على الوجهين.",
+                "ru": "Профессиональная шлифовальная машина для двух операторов. Возможность двусторонней работы."
+            },
+            "specs": {
+                "power": "3.5 KW",
+                "voltage": "380V",
+                "table_size": "100x60 cm",
+                "weight": "95 kg"
+            },
+            "features": {
+                "tr": ["İki kişilik", "Çift taraflı", "Yüksek kapasite", "Profesyonel kullanım"],
+                "en": ["Two-person", "Double-sided", "High capacity", "Professional use"],
+                "ar": ["شخصين", "وجهين", "سعة عالية", "استخدام احترافي"],
+                "ru": ["Двухместный", "Двусторонний", "Высокая мощность", "Профессиональное использование"]
+            },
+            "images": ["https://customer-assets.emergentagent.com/job_beymen-site-clone/artifacts/oe58dcx6_BT8A8304.png"],
+            "price": "Fiyat için iletişime geçin",
+            "is_active": True,
+            "created_at": datetime.utcnow(),
+            "updated_at": datetime.utcnow()
+        },
+        {
+            "id": "prod-mega-cila-2",
+            "category_id": "cat-vacuum-systems",
+            "name": {
+                "tr": "Mega Cila Makinası",
+                "en": "Mega Polishing Machine",
+                "ar": "آلة تلميع ميجا",
+                "ru": "Мега полировальная машина"
+            },
+            "description": {
+                "tr": "Mega boyutlarda cila makinası. Büyük ölçekli üretim için ideal çözüm.",
+                "en": "Mega size polishing machine. Ideal solution for large-scale production.",
+                "ar": "آلة تلميع ميجا الحجم. الحل الأمثل للإنتاج واسع النطاق.",
+                "ru": "Полировальная машина мега размера. Идеальное решение для крупномасштабного производства."
+            },
+            "specs": {
+                "power": "4.0 KW",
+                "voltage": "380V",
+                "dimensions": "120x80x90 cm",
+                "weight": "150 kg"
+            },
+            "features": {
+                "tr": ["Mega kapasite", "Endüstriyel güç", "Büyük alan", "Heavy-duty"],
+                "en": ["Mega capacity", "Industrial power", "Large area", "Heavy-duty"],
+                "ar": ["سعة ميجا", "قوة صناعية", "منطقة كبيرة", "للاستخدام الشاق"],
+                "ru": ["Мега мощность", "Промышленная сила", "Большая площадь", "Сверхпрочный"]
+            },
+            "images": ["https://customer-assets.emergentagent.com/job_beymen-site-clone/artifacts/fzhurecv_BT8A8345.jpg"],
+            "price": "Fiyat için iletişime geçin",
+            "is_active": True,
+            "created_at": datetime.utcnow(),
+            "updated_at": datetime.utcnow()
         }
     ]
     
