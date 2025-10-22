@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ChevronLeft, Check } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
-import { translations, products } from '../mockData';
+import { translations } from '../mockData';
+import { productsAPI } from '../services/api';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../components/ui/tabs';
@@ -11,8 +12,32 @@ const ProductDetail = () => {
   const { id } = useParams();
   const { language } = useLanguage();
   const t = translations[language];
-  const product = products.find(p => p.id === parseInt(id));
+  const [product, setProduct] = useState(null);
+  const [loading, setLoading] = useState(true);
   const [selectedImage, setSelectedImage] = useState(0);
+
+  useEffect(() => {
+    fetchProduct();
+  }, [id]);
+
+  const fetchProduct = async () => {
+    try {
+      const response = await productsAPI.getById(id);
+      setProduct(response.data);
+    } catch (error) {
+      console.error('Error fetching product:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-slate-50 to-gray-50 flex items-center justify-center">
+        <div className="text-lg text-gray-600">Yükleniyor...</div>
+      </div>
+    );
+  }
 
   if (!product) {
     return (
