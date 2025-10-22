@@ -49,6 +49,14 @@ const Products = () => {
     ? products
     : products.filter(p => p.category_id === selectedCategory);
 
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-slate-50 to-gray-50 flex items-center justify-center">
+        <div className="text-lg text-gray-600">Yükleniyor...</div>
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-gray-50">
       {/* Header */}
@@ -77,9 +85,9 @@ const Products = () => {
             {categories.map((category) => (
               <Button
                 key={category.id}
-                variant={selectedCategory === category.id.toString() ? 'default' : 'outline'}
-                onClick={() => setSelectedCategory(category.id.toString())}
-                className={selectedCategory === category.id.toString() ? 'bg-blue-600 hover:bg-blue-700' : ''}
+                variant={selectedCategory === category.id ? 'default' : 'outline'}
+                onClick={() => setSelectedCategory(category.id)}
+                className={selectedCategory === category.id ? 'bg-blue-600 hover:bg-blue-700' : ''}
               >
                 {category.name[language]}
               </Button>
