@@ -60,8 +60,15 @@ const Products = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-gray-50">
       {/* Header */}
-      <div className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white py-16 relative overflow-hidden">
+        <div className="absolute right-10 top-1/2 -translate-y-1/2 opacity-20">
+          <img
+            src="https://customer-assets.emergentagent.com/job_beymen-site-clone/artifacts/3dm45or1_WhatsApp%20Image%202025-10-20%20at%2003.44.32.jpeg"
+            alt="GOLD Logo"
+            className="h-32 w-auto object-contain brightness-200"
+          />
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <h1 className="text-4xl lg:text-5xl font-bold mb-4">{t.products.title}</h1>
           <p className="text-xl text-blue-100">{t.categories.subtitle}</p>
         </div>
