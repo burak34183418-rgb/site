@@ -58,14 +58,28 @@ const About = () => {
               {language === 'tr' ? 'Hakkımızda' : language === 'en' ? 'About Us' : language === 'ar' ? 'من نحن' : 'О нас'}
             </h2>
             <div className="space-y-4 text-gray-600 leading-relaxed">
+              <div className="bg-gradient-to-r from-yellow-50 to-yellow-100 border-l-4 border-yellow-500 p-6 rounded-lg mb-6">
+                <h3 className="text-2xl font-bold text-yellow-800 mb-3">
+                  FOR THE OPTIMUM GOLD RECOVERY
+                </h3>
+                <p className="text-yellow-900 font-medium">
+                  {language === 'tr'
+                    ? 'Kuyumculuk sektörüne özel altın geri kazanım sistemlerinde uzmanız. Makinalarımız optimum verimlilik ve maksimum altın geri kazanımı sağlar.'
+                    : language === 'en'
+                    ? 'We specialize in gold recovery systems for the jewelry industry. Our machines provide optimum efficiency and maximum gold recovery.'
+                    : language === 'ar'
+                    ? 'نحن متخصصون في أنظمة استعادة الذهب لصناعة المجوهرات. توفر آلاتنا كفاءة مثالية وأقصى استرداد للذهب.'
+                    : 'Мы специализируемся на системах восстановления золота для ювелирной промышленности. Наши машины обеспечивают оптимальную эффективность и максимальное восстановление золота.'}
+                </p>
+              </div>
               <p>
                 <strong className="text-blue-600">{companyInfo.about[language].experience}</strong> - {language === 'tr'
-                  ? 'GOLD Vakum Sistemleri, endüstriyel ekipman sektöründe 36 yıllık tecrübesiyle sektörün lider firmalarından biridir. Buhar jeneratörleri, vakum sistemleri ve endüstriyel presler konusunda uzmanlaşmış firmamız, müşteri memnuniyetini her zaman ön planda tutmuştur.'
+                  ? 'GOLD Vakum Sistemleri, kuyumculuk ve altın işleme sektöründe 36 yıllık tecrübesiyle sektörün lider firmalarından biridir. Altın geri kazanımı, cila ve parlatma sistemleri konusunda uzmanlaşmış firmamız, %99 müşteri memnuniyeti ile sektörün öncüsüdür.'
                   : language === 'en'
-                  ? 'GOLD Vacuum Systems is one of the leading companies in the industrial equipment sector with 36 years of experience. Our company, specialized in steam generators, vacuum systems and industrial presses, has always prioritized customer satisfaction.'
+                  ? 'GOLD Vacuum Systems is one of the leading companies in the jewelry and gold processing sector with 36 years of experience. Our company, specialized in gold recovery, polishing and finishing systems, is the pioneer of the industry with 99% customer satisfaction.'
                   : language === 'ar'
-                  ? 'تعد GOLD Vacuum Systems واحدة من الشركات الرائدة في قطاع المعدات الصناعية مع 36 عامًا من الخبرة. تخصصت شركتنا في مولدات البخار وأنظمة الفراغ والمكابس الصناعية، وقد أعطت دائمًا الأولوية لرضا العملاء.'
-                  : 'GOLD Vacuum Systems является одной из ведущих компаний в секторе промышленного оборудования с 36-летним опытом. Наша компания, специализирующаяся на парогенераторах, вакуумных системах и промышленных прессах, всегда ставила удовлетворенность клиентов на первое место.'}
+                  ? 'تعد GOLD Vacuum Systems واحدة من الشركات الرائدة في قطاع المجوهرات ومعالجة الذهب مع 36 عامًا من الخبرة. شركتنا المتخصصة في أنظمة استعادة الذهب والتلميع والتشطيب هي رائدة الصناعة مع 99٪ رضا العملاء.'
+                  : 'GOLD Vacuum Systems является одной из ведущих компаний в секторе ювелирных изделий и обработки золота с 36-летним опытом. Наша компания, специализирующаяся на системах восстановления золота, полировки и отделки, является пионером отрасли с 99% удовлетворенностью клиентов.'}
               </p>
               <p>
                 <strong className="text-green-600">{companyInfo.about[language].export}</strong> - {language === 'tr'
