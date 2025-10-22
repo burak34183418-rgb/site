@@ -1,14 +1,29 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Award, Headphones, Shield, Globe2 } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
-import { translations, categories } from '../mockData';
+import { translations } from '../mockData';
+import { categoriesAPI } from '../services/api';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 
 const Home = () => {
   const { language } = useLanguage();
   const t = translations[language];
+  const [categories, setCategories] = useState([]);
+
+  useEffect(() => {
+    fetchCategories();
+  }, []);
+
+  const fetchCategories = async () => {
+    try {
+      const response = await categoriesAPI.getAll();
+      setCategories(response.data);
+    } catch (error) {
+      console.error('Error fetching categories:', error);
+    }
+  };
 
   const features = [
     {
