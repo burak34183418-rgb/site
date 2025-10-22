@@ -19,6 +19,7 @@ import ProductList from './pages/admin/ProductList';
 import ProductForm from './pages/admin/ProductForm';
 import Contacts from './pages/admin/Contacts';
 import ProtectedRoute from './components/ProtectedRoute';
+import WhatsAppButton from './components/WhatsAppButton';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <LanguageProvider>
         <div className="App">
           <BrowserRouter>
+            <WhatsAppButton />
             <Routes>
               {/* Public Routes */}
               <Route
