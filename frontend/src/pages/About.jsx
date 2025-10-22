@@ -12,14 +12,14 @@ const About = () => {
   const stats = [
     {
       icon: Award,
-      value: '20+',
-      label: language === 'tr' ? 'Yıllık Deneyim' : language === 'en' ? 'Years Experience' : language === 'ar' ? 'سنوات من الخبرة' : 'Лет опыта',
+      value: '36',
+      label: language === 'tr' ? 'Yıllık Deneyim' : language === 'en' ? 'Years Experience' : language === 'ar' ? 'سنة من الخبرة' : 'Лет опыта',
       color: 'text-blue-600',
       bgColor: 'bg-blue-50',
     },
     {
       icon: Users,
-      value: '5000+',
+      value: '10000+',
       label: language === 'tr' ? 'Mutlu Müşteri' : language === 'en' ? 'Happy Clients' : language === 'ar' ? 'عميل سعيد' : 'Довольных клиентов',
       color: 'text-green-600',
       bgColor: 'bg-green-50',
@@ -27,14 +27,14 @@ const About = () => {
     {
       icon: Globe2,
       value: '50+',
-      label: language === 'tr' ? 'Ülke' : language === 'en' ? 'Countries' : language === 'ar' ? 'دولة' : 'Стран',
+      label: language === 'tr' ? 'İhracat Ülkesi' : language === 'en' ? 'Export Countries' : language === 'ar' ? 'دول التصدير' : 'Стран экспорта',
       color: 'text-purple-600',
       bgColor: 'bg-purple-50',
     },
     {
       icon: TrendingUp,
-      value: '99%',
-      label: language === 'tr' ? 'Müşteri Memnuniyeti' : language === 'en' ? 'Customer Satisfaction' : language === 'ar' ? 'رضا العملاء' : 'Удовлетворенность клиентов',
+      value: '#1',
+      label: language === 'tr' ? 'Sektör Lideri' : language === 'en' ? 'Industry Leader' : language === 'ar' ? 'رائد الصناعة' : 'Лидер отрасли',
       color: 'text-orange-600',
       bgColor: 'bg-orange-50',
     },
