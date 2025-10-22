@@ -233,7 +233,8 @@ const Contact = () => {
                       <h4 className="font-semibold text-gray-900 mb-1">
                         {language === 'tr' ? 'Telefon' : language === 'en' ? 'Phone' : language === 'ar' ? 'الهاتف' : 'Телефон'}
                       </h4>
-                      <p className="text-gray-600 text-sm">+90 (XXX) XXX XX XX</p>
+                      <p className="text-gray-600 text-sm">{companyInfo.phone}</p>
+                      <p className="text-gray-600 text-sm">{companyInfo.mobile}</p>
                     </div>
                   </div>
 
