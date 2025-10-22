@@ -68,7 +68,7 @@ const About = () => {
                   : 'GOLD Vacuum Systems является одной из ведущих компаний в секторе промышленного оборудования с 36-летним опытом. Наша компания, специализирующаяся на парогенераторах, вакуумных системах и промышленных прессах, всегда ставила удовлетворенность клиентов на первое место.'}
               </p>
               <p>
-                {language === 'tr'
+                <strong className="text-green-600">{companyInfo.about[language].export}</strong> - {language === 'tr'
                   ? 'Modern üretim tesisimiz ve uzman kadromuzla, dünya çapında 50\'den fazla ülkeye ihracat yapmaktayız. CE sertifikalı ürünlerimiz, uluslararası kalite standartlarına uygun olarak üretilmektedir.'
                   : language === 'en'
                   ? 'With our modern production facility and expert staff, we export to more than 50 countries worldwide. Our CE certified products are manufactured in accordance with international quality standards.'
